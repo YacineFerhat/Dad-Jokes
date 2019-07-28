@@ -31,6 +31,46 @@
     font-size: 1.5rem;
     margin: 3px;
     cursor: pointer ;
+    transition: all 0.3s;
+
+}
+.fa-arrow-up:hover{
+    animation-name: moveUp;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-out;
+
+}
+
+@keyframes moveUp{
+    0%,
+    50%,
+    100%{
+        transform: translateY(0)
+    }
+    25%,
+    75%{
+        transform: translateY(-3px)
+    }
+}
+
+
+.fa-arrow-down:hover{
+    animation-name: moveDown;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-out;
+
+}
+
+@keyframes moveDown{
+    0%,
+    50%,
+    100%{
+        transform: translateY(0)
+    }
+    25%,
+    75%{
+        transform: translateY(+3px)
+    }
 }
 
 
@@ -46,6 +86,31 @@
    font-size: 3rem;
    margin-left: auto; 
    border-radius: 50;
-   box-shadow: 0 10px 38px rgba(0, 0, 0, 0.2), 0 10px 12px rgba(0, 0, 0, 0.1)  
 
+}
+
+.JokeSmiley:hover{
+    animation-name: spin;
+    animation-duration: 0.7s;
+    animation-timing-function: ease-out;
+    animation-delay: 0s;
+
+}
+
+@keyframes spin {
+    0%{
+        transform: rotate(0deg)
+    }
+    30%{
+        transform: rotate(30deg)
+    }
+    60%{
+        transform: rotate(0deg)
+    }
+    80%{
+        transform: rotate(20deg)
+    }
+    100%{
+        transform: rotate(0deg)
+    }
 }
